@@ -57,3 +57,15 @@ Single-page portfolio built with React 19 + Vite. No routing — all sections ar
 **Styling:** Plain CSS in [src/App.css](src/App.css) (component styles) and [src/index.css](src/index.css) (global resets/variables). No CSS modules or CSS-in-JS.
 
 **Resume:** `public/resume.pdf` is served statically and linked from the Hero download button.
+
+## Deployment
+
+- **GitHub:** https://github.com/Yitzhakbin9/yitzhak-portfolio
+- **Hosting:** Vercel — connected to the `main` branch. Every `git push` to `main` triggers an automatic redeploy.
+
+To deploy changes:
+```bash
+git add .
+git commit -m "your message"
+git push
+```

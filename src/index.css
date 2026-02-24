@@ -5,26 +5,27 @@
 }
 
 :root {
-  --bg: #060612;
-  --bg-card: #0d0d1f;
-  --bg-card-hover: #12122a;
-  --border: #1e1e3f;
-  --text: #e8e8ff;
-  --text-muted: #7878aa;
-  --accent: #00d4ff;
+  --bg: #04080f;
+  --bg-card: rgba(5, 10, 24, 0.68);
+  --bg-card-hover: rgba(8, 15, 32, 0.80);
+  --border: rgba(46, 232, 204, 0.14);
+  --text: #d8eaf2;
+  --text-muted: #6888a8;
+  --accent: #2ee8cc;
   --accent-secondary: #a855f7;
-  --accent-dim: rgba(0, 212, 255, 0.1);
-  --accent-secondary-dim: rgba(168, 85, 247, 0.15);
-  --glow: 0 0 18px rgba(0, 212, 255, 0.25);
+  --accent-dim: rgba(46, 232, 204, 0.12);
+  --accent-secondary-dim: rgba(168, 85, 247, 0.14);
+  --glow: 0 0 20px rgba(46, 232, 204, 0.3);
   --font: 'Segoe UI', system-ui, sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--bg);
 }
 
 body {
-  background-color: var(--bg);
+  background-color: transparent;
   color: var(--text);
   font-family: var(--font);
   font-size: 18px;
@@ -36,8 +37,8 @@ body::before {
   position: fixed;
   inset: 0;
   background-image:
-    linear-gradient(rgba(0, 212, 255, 0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 212, 255, 0.025) 1px, transparent 1px);
+    linear-gradient(rgba(46, 232, 204, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(168, 85, 247, 0.018) 1px, transparent 1px);
   background-size: 60px 60px;
   animation: grid-move 30s linear infinite;
   pointer-events: none;

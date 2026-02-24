@@ -11,6 +11,7 @@ import "./App.css";
 export default function App() {
   return (
     <>
+      <div className="bg-image" aria-hidden="true" />
       <ScrollProgress />
       <Navbar />
       <main>
