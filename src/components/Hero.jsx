@@ -37,7 +37,7 @@ export default function Hero() {
       <div className="hero-btns">
         <a href="#projects" className="btn btn-primary">View My Work</a>
         <a href="#contact" className="btn btn-outline">Contact Me</a>
-        <a href="/Yitzhak_Binyamin_CV.docx" download className="btn btn-outline">Download CV</a>
+        <a href="/Yitzhak_Binyamin_CV.pdf" download className="btn btn-outline">Download CV</a>
       </div>
     </section>
   );
