@@ -6,17 +6,20 @@ export default function Hero() {
   const fullText = data.tagline;
 
   useEffect(() => {
-    let i = 0;
+    let timer;
     const delay = setTimeout(() => {
-      const timer = setInterval(() => {
+      let i = 0;
+      timer = setInterval(() => {
         setDisplayed(fullText.slice(0, i + 1));
         i++;
         if (i === fullText.length) clearInterval(timer);
       }, 60);
-      return () => clearInterval(timer);
     }, 800);
-    return () => clearTimeout(delay);
-  }, []);
+    return () => {
+      clearTimeout(delay);
+      clearInterval(timer);
+    };
+  }, [fullText]);
 
   return (
     <section className="hero">
@@ -34,7 +37,7 @@ export default function Hero() {
       <div className="hero-btns">
         <a href="#projects" className="btn btn-primary">View My Work</a>
         <a href="#contact" className="btn btn-outline">Contact Me</a>
-        <a href="/resume.pdf" download className="btn btn-outline">Download CV</a>
+        <a href="/Yitzhak_Binyamin_Full_Stack_Developer3.docx" download className="btn btn-outline">Download CV</a>
       </div>
     </section>
   );

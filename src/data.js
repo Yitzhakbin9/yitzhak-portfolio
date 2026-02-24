@@ -8,8 +8,8 @@ export const data = {
     email: "Yitzhakbin9@gmail.com",
     phone: "052-585-8770",
     location: "Rishon Lezion",
-    github: "https://github.com",
-    linkedin: "https://linkedin.com",
+    github: "https://github.com/Yitzhakbin9",
+    linkedin: "https://www.linkedin.com/in/yitzhak-binyamin/",
   },
   skills: [
     "JavaScript",

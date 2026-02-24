@@ -4,6 +4,7 @@ const NAV_LINKS = ['about', 'skills', 'projects', 'education', 'contact'];
 
 export default function Navbar() {
   const [active, setActive] = useState('');
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const sections = document.querySelectorAll('section[id]');
@@ -22,10 +23,27 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <span className="navbar-logo">YB</span>
-      <ul className="navbar-links">
+
+      <button
+        className={`hamburger${menuOpen ? ' open' : ''}`}
+        onClick={() => setMenuOpen(o => !o)}
+        aria-label="Toggle menu"
+        aria-expanded={menuOpen}
+      >
+        <span />
+        <span />
+        <span />
+      </button>
+
+      <ul className={`navbar-links${menuOpen ? ' open' : ''}`}>
         {NAV_LINKS.map(id => (
           <li key={id}>
-            <a href={`#${id}`} className={active === id ? 'active' : ''}>
+            <a
+              href={`#${id}`}
+              className={active === id ? 'active' : ''}
+              aria-current={active === id ? 'page' : undefined}
+              onClick={() => setMenuOpen(false)}
+            >
               {id.charAt(0).toUpperCase() + id.slice(1)}
             </a>
           </li>
