@@ -1,3 +1,6 @@
+import ecommerceProjectImage from "./assets/e-commerce.png";
+import factoryProjectImage from "./assets/employees.png";
+
 export const data = {
   name: "Yitzhak Binyamin",
   title: "Full Stack Developer",
@@ -13,6 +16,7 @@ export const data = {
   },
   skills: [
     "JavaScript",
+    "TypeScript",
     "React",
     "Redux",
     "Node.js",
@@ -24,13 +28,12 @@ export const data = {
     "REST APIs",
     "JWT",
     "Docker",
-    "Kubernetes",
     "Git",
     "CI/CD",
   ],
   experience: [
     {
-      role: "Frontend Developer (Java-based Internal Systems)",
+      role: "Frontend Developer (Java)",
       company: "Bank Hapoalim",
       period: "2022 - 2025",
       bullets: [
@@ -44,17 +47,45 @@ export const data = {
   projects: [
     {
       title: "E-Commerce Web App",
+      eyebrow: "Customer + Admin Experience",
       description:
-        "Full-stack e-commerce app supporting Admin and Customer roles. React + Redux frontend with dynamic product catalog, shopping cart, and order flow. Firebase backend with auth and role-based access.",
+        "Full-stack commerce platform with separate admin and customer journeys, a dynamic catalog, cart flow, and authenticated access control.",
+      highlight:
+        "Built to show product thinking as well as frontend state management: protected routes, role-based behavior, and a complete shopping experience from browsing to order flow.",
       tech: ["React", "Redux", "Firebase", "JavaScript"],
       github: "https://github.com/Yitzhakbin9/e-Commerce-Web-Site",
+      live: "https://e-commerce-web-site-sooty.vercel.app/login",
+      liveLabel: "Live Demo Soon",
+      image: ecommerceProjectImage,
+      imageAlt: "Preview illustration for the E-Commerce Web App project",
+    },
+    {
+      title: "E-Commerce Web App",
+      eyebrow: "Customer + Admin Experience",
+      description:
+        "Full-stack commerce platform with separate admin and customer journeys, a dynamic catalog, cart flow, and authenticated access control.",
+      highlight:
+        "Built to show product thinking as well as frontend state management: protected routes, role-based behavior, and a complete shopping experience from browsing to order flow.",
+      tech: ["React", "Redux", "Firebase", "JavaScript"],
+      github: "https://github.com/Yitzhakbin9/e-Commerce-Web-Site",
+      live: "https://e-commerce-web-site-sooty.vercel.app/login",
+      liveLabel: "Live Demo Soon",
+      image: ecommerceProjectImage,
+      imageAlt: "Preview illustration for the E-Commerce Web App project",
     },
     {
       title: "Factory Management System",
+      eyebrow: "Operations + API Design",
       description:
-        "Backend-focused factory management system built with Node.js and MongoDB. Structured REST API with JWT auth, role-based behavior, and relational data models for employees, departments, and shifts.",
+        "Backend-focused management system for factory operations with REST APIs, JWT authentication, and structured relationships between employees, departments, and shifts.",
+      highlight:
+        "This project highlights data modeling and system design: organizing permissions, enforcing role-aware behavior, and keeping complex business entities consistent across the API.",
       tech: ["Node.js", "Express", "MongoDB", "JWT"],
       github: "https://github.com/Yitzhakbin9/employees-management-system",
+      live: "",
+      liveLabel: "Code Walkthrough Ready",
+      image: factoryProjectImage,
+      imageAlt: "Preview illustration for the Factory Management System project",
     },
   ],
   education: [
