@@ -1,5 +1,6 @@
 import ecommerceProjectImage from "./assets/e-commerce.png";
 import factoryProjectImage from "./assets/employees.png";
+import moviesSubscription from "./assets/movies-subscription.png";
 
 export const data = {
   name: "Yitzhak Binyamin",
@@ -46,7 +47,7 @@ export const data = {
   ],
   projects: [
     {
-      title: "E-Commerce Web App",
+      title: "movies subscription management system",
       eyebrow: "Customer + Admin Experience",
       description:
         "Full-stack commerce platform with separate admin and customer journeys, a dynamic catalog, cart flow, and authenticated access control.",
@@ -54,9 +55,9 @@ export const data = {
         "Built to show product thinking as well as frontend state management: protected routes, role-based behavior, and a complete shopping experience from browsing to order flow.",
       tech: ["React", "Redux", "Firebase", "JavaScript"],
       github: "https://github.com/Yitzhakbin9/e-Commerce-Web-Site",
-      live: "https://e-commerce-web-site-sooty.vercel.app/login",
+      live: "https://yitzhak-portfolio.vercel.app/",
       liveLabel: "Live Demo Soon",
-      image: ecommerceProjectImage,
+      image: moviesSubscription,
       imageAlt: "Preview illustration for the E-Commerce Web App project",
     },
     {

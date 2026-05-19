@@ -1,4 +1,4 @@
-── NAVBAR ──
+/* ── NAVBAR ── */
 .navbar {
   position: fixed;
   top: 0;
@@ -235,9 +235,13 @@
 }
 
 /* ── PROJECTS ── */
+.projects-section {
+  max-width: 1760px;
+}
+
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.75rem;
 }
 
@@ -671,7 +675,25 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .projects-section {
+    max-width: 1320px;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 720px) {
+  .projects-section {
+    max-width: 900px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
   .project-content,
   .project-tech,
   .project-links {

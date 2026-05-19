@@ -5,7 +5,7 @@ export default function Projects() {
   const ref = useScrollReveal();
 
   return (
-    <section className="section reveal" id="projects" ref={ref}>
+    <section className="section projects-section reveal" id="projects" ref={ref}>
       <h2 className="section-title">Projects</h2>
       <p className="section-intro projects-intro">
         A few selected builds that show both interface work and backend thinking.
