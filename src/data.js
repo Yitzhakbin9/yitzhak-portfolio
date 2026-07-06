@@ -47,15 +47,15 @@ export const data = {
   ],
   projects: [
     {
-      title: "movies subscription management system",
-      eyebrow: "Customer + Admin Experience",
+      title: "Movies Subscription Management System",
+      eyebrow: "Customer + Admin Experience (still in development)",
       description:
-        "Full-stack commerce platform with separate admin and customer journeys, a dynamic catalog, cart flow, and authenticated access control.",
+        "Full-stack subscription management system for a movies, featuring separate admin and customer journeys, dynamic catalog management.",
       highlight:
-        "Built to show product thinking as well as frontend state management: protected routes, role-based behavior, and a complete shopping experience from browsing to order flow.",
+        "",
       tech: ["React", "Redux", "Firebase", "JavaScript"],
-      github: "https://github.com/Yitzhakbin9/e-Commerce-Web-Site",
-      live: "https://yitzhak-portfolio.vercel.app/",
+      github: "https://github.com/Yitzhakbin9/movies-subscription-management-system",
+      live: "https://movies-subscription-management-syst.vercel.app/main",
       liveLabel: "Live Demo Soon",
       image: moviesSubscription,
       imageAlt: "Preview illustration for the E-Commerce Web App project",
