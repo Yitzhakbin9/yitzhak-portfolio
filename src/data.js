@@ -5,7 +5,7 @@ import moviesSubscription from "./assets/movies-subscription.png";
 export const data = {
   name: "Yitzhak Binyamin",
   title: "Full Stack Developer",
-  tagline: "Java · React · Node.js",
+  tagline: "JavaScript · React · Node.js · Java",
   summary:
     "Full Stack Developer with 3 years of professional experience as a Java Developer in a large-scale production environment. Strong focus on clean architecture, real-world data modeling, and production-ready code.",
   contact: {
@@ -34,7 +34,7 @@ export const data = {
   ],
   experience: [
     {
-      role: "Frontend Developer (Java)",
+      role: "Java Developer",
       company: "Bank Hapoalim",
       period: "2022 - 2025",
       bullets: [
@@ -56,7 +56,7 @@ export const data = {
       tech: ["React", "Redux", "Firebase", "JavaScript"],
       github: "https://github.com/Yitzhakbin9/movies-subscription-management-system",
       live: "https://movies-subscription-management-syst.vercel.app/main",
-      liveLabel: "Live Demo Soon",
+      liveLabel: "",
       image: moviesSubscription,
       imageAlt: "Preview illustration for the E-Commerce Web App project",
     },
@@ -64,7 +64,7 @@ export const data = {
       title: "E-Commerce Web App",
       eyebrow: "Customer + Admin Experience",
       description:
-        "Full-stack commerce platform with separate admin and customer journeys, a dynamic catalog, cart flow, and authenticated access control.",
+        "Full-stack commerce platform with separate admin and customer journeys, a dynamic catalog, cart flow, and authenticated access control. CREDENTIALS: Admin - admin@gmail.com, password: admin1234. Customer - test@gmail.com, password: 123456)",
       highlight:
         "Built to show product thinking as well as frontend state management: protected routes, role-based behavior, and a complete shopping experience from browsing to order flow.",
       tech: ["React", "Redux", "Firebase", "JavaScript"],
@@ -78,12 +78,12 @@ export const data = {
       title: "Factory Management System",
       eyebrow: "Operations + API Design",
       description:
-        "Backend-focused management system for factory operations with REST APIs, JWT authentication, and structured relationships between employees, departments, and shifts.",
+        "Backend-focused management system for factory operations with REST APIs, JWT authentication, and structured relationships between employees, departments, and shifts. CREDENTIALS: username: admin, mail: admin@gmail.com",
       highlight:
         "This project highlights data modeling and system design: organizing permissions, enforcing role-aware behavior, and keeping complex business entities consistent across the API.",
       tech: ["Node.js", "Express", "MongoDB", "JWT"],
       github: "https://github.com/Yitzhakbin9/employees-management-system",
-      live: "",
+      live: "https://employees-management-system-roan.vercel.app/login",
       liveLabel: "Code Walkthrough Ready",
       image: factoryProjectImage,
       imageAlt: "Preview illustration for the Factory Management System project",
@@ -91,9 +91,9 @@ export const data = {
   ],
   education: [
     {
-      title: "Full Stack Development Program",
-      place: "Yaniv Arad",
-      year: "2025",
+      title: "B.Sc Computer Science & Mathematics",
+      place: "Ariel University",
+      year: "2016 - 2020",
     },
     {
       title: "Java & Spring Back-end Bootcamp",
@@ -101,9 +101,9 @@ export const data = {
       year: "2022",
     },
     {
-      title: "Computer Science & Mathematics",
-      place: "Ariel University",
-      year: "2016 - 2020",
+      title: "Full Stack Development Program",
+      place: "Yaniv Arad",
+      year: "2025",
     },
   ],
 };
