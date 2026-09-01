@@ -13,6 +13,7 @@ export default function Contact() {
         <a href={`mailto:${email}`} className="contact-item">{email}</a>
         <a href={github} target="_blank" rel="noreferrer" className="contact-item">GitHub</a>
         <a href={linkedin} target="_blank" rel="noreferrer" className="contact-item">LinkedIn</a>
+        <a href="tel:+972525858770" className="contact-item">052-585-8770</a>
       </div>
     </section>
   );
