@@ -28,6 +28,22 @@ export default function Projects() {
               <h3 className="project-title">{project.title}</h3>
               <p className="project-desc">{project.description}</p>
               <p className="project-highlight">{project.highlight}</p>
+
+              {project.credentials?.length > 0 && (
+                <div className="project-credentials">
+                  <span className="project-credentials-label">Credentials</span>
+                  <ul className="project-credentials-list">
+                    {project.credentials.map((credential, j) => (
+                      <li key={j}>
+                        <span className="credential-role">{credential.role}</span>
+                        <span className="credential-value">
+                          {credential.email} / {credential.password}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
 
             <div className="project-tech">

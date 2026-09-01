@@ -51,9 +51,8 @@ export const data = {
       eyebrow: "Customer + Admin Experience (still in development)",
       description:
         "Full-stack subscription management system for a movies, featuring separate admin and customer journeys, dynamic catalog management.",
-      highlight:
-        "",
-      tech: ["React", "Redux", "Firebase", "JavaScript"],
+      highlight: "",
+      tech: ["React", "Redux", "Firebase", "TypeScript", "ClaudeCode"],
       github: "https://github.com/Yitzhakbin9/movies-subscription-management-system",
       live: "https://movies-subscription-management-syst.vercel.app/main",
       liveLabel: "",
@@ -64,9 +63,13 @@ export const data = {
       title: "E-Commerce Web App",
       eyebrow: "Customer + Admin Experience",
       description:
-        "Full-stack commerce platform with separate admin and customer journeys, a dynamic catalog, cart flow, and authenticated access control. CREDENTIALS: Admin - admin@gmail.com, password: admin1234. Customer - test@gmail.com, password: 123456)",
+        "Full-stack commerce platform with separate admin and customer journeys, a dynamic catalog, cart flow, and authenticated access control.",
       highlight:
         "Built to show product thinking as well as frontend state management: protected routes, role-based behavior, and a complete shopping experience from browsing to order flow.",
+      credentials: [
+        { role: "Admin", email: "admin@gmail.com", password: "admin1234" },
+        { role: "Customer", email: "test@gmail.com", password: "123456" },
+      ], 
       tech: ["React", "Redux", "Firebase", "JavaScript"],
       github: "https://github.com/Yitzhakbin9/e-Commerce-Web-Site",
       live: "https://e-commerce-web-site-sooty.vercel.app/login",
@@ -78,9 +81,10 @@ export const data = {
       title: "Factory Management System",
       eyebrow: "Operations + API Design",
       description:
-        "Backend-focused management system for factory operations with REST APIs, JWT authentication, and structured relationships between employees, departments, and shifts. CREDENTIALS: username: admin, mail: admin@gmail.com",
+        "Backend-focused management system for factory operations with REST APIs, JWT authentication, and structured relationships between employees, departments, and shifts.",
       highlight:
         "This project highlights data modeling and system design: organizing permissions, enforcing role-aware behavior, and keeping complex business entities consistent across the API.",
+      credentials: [{ role: "Admin", email: "admin", password: "admin@gmail.com" }],
       tech: ["Node.js", "Express", "MongoDB", "JWT"],
       github: "https://github.com/Yitzhakbin9/employees-management-system",
       live: "https://employees-management-system-roan.vercel.app/login",
